@@ -33,7 +33,7 @@ vectorstore = load_vectorstore()
 retriever = vectorstore.as_retriever()
 
 search_tool = TavilySearchResults(k=3)
-llm = ChatGroq(model_name="deepseek-r1-distill-llama-70b")
+llm = ChatGroq(model_name="openai/gpt-oss-20b")
 
 # --- Graph State ---
 class GraphState(TypedDict):
